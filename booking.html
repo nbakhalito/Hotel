@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Book Your Stay | L-Rina Apartment</title>
+		<meta name="description" content="Request a stay at L-Rina Apartment in Eti-Osa, Lagos.">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body data-page="booking">
+		<header id="site-header"></header>
+		<main id="app">
+			<section class="relative flex h-[360px] items-end bg-cover bg-center" style="background-image:url('https://images.pexels.com/photos/6580396/pexels-photo-6580396.jpeg?auto=compress&cs=tinysrgb&w=1800')">
+				<div class="absolute inset-0 bg-black/45"></div>
+				<div class="container-lr relative z-10 pb-14 text-white">
+					<p class="section-subtitle text-amber-400">Reserve your stay</p>
+					<h1 class="font-serif text-6xl font-bold">Book Your Stay</h1>
+				</div>
+			</section>
+			<section class="py-20">
+				<div class="container-lr max-w-5xl">
+					<div class="mb-10 flex items-center justify-center gap-2 text-sm text-stone-500">
+						<span class="rounded-full bg-amber-600 px-4 py-2 text-white">1. Stay details</span>
+						<span aria-hidden="true">→</span>
+						<span>2. Your information</span>
+						<span aria-hidden="true">→</span>
+						<span>3. Confirmation</span>
+					</div>
+					<form id="booking-form" class="grid gap-8 lg:grid-cols-[1fr_360px]">
+						<div class="card-luxury p-7">
+							<h2 class="font-serif text-3xl font-bold">Tell us about your stay</h2>
+							<div class="mt-7 grid gap-5 sm:grid-cols-2">
+								<label class="label-luxury">Room<select id="booking-room" name="room" required class="input-luxury mt-2"></select></label>
+								<label class="label-luxury">Guests<select id="booking-guests" name="guests" class="input-luxury mt-2"><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
+								<label class="label-luxury">Check-in<input id="booking-checkin" name="checkin" type="date" required class="input-luxury mt-2"></label>
+								<label class="label-luxury">Check-out<input id="booking-checkout" name="checkout" type="date" required class="input-luxury mt-2"></label>
+							</div>
+							<div class="mt-8 border-t border-stone-100 pt-8">
+								<h3 class="font-serif text-2xl font-bold">Your information</h3>
+								<div class="mt-5 grid gap-5 sm:grid-cols-2">
+									<label class="label-luxury">Full name<input name="full_name" required class="input-luxury mt-2"></label>
+									<label class="label-luxury">Phone<input name="phone" type="tel" required class="input-luxury mt-2"></label>
+									<label class="label-luxury sm:col-span-2">Email<input name="email" type="email" required class="input-luxury mt-2"></label>
+									<label class="label-luxury sm:col-span-2">Special requests<textarea name="special_requests" rows="3" class="input-luxury mt-2"></textarea></label>
+								</div>
+							</div>
+							<button class="btn-primary mt-8 justify-center" type="submit">Submit booking request</button>
+							<p id="booking-message" class="mt-4 text-sm" role="status"></p>
+						</div>
+						<aside class="card-luxury h-fit p-7">
+							<p class="section-subtitle">Your selection</p>
+							<h2 id="summary-room" class="font-serif text-3xl font-bold">Choose a room</h2>
+							<div class="mt-5 space-y-3 text-sm text-stone-600">
+								<p>Check-in: <span id="summary-in">Choose a date</span></p>
+								<p>Check-out: <span id="summary-out">Choose a date</span></p>
+								<p>Guests: <span id="summary-guests">1</span></p>
+								<p>Nights: <span id="summary-nights">-</span></p>
+							</div>
+							<div class="mt-7 border-t border-stone-100 pt-5">
+								<p class="flex justify-between font-semibold"><span>Estimated total</span><span id="summary-total">₦0</span></p>
+								<p class="mt-2 text-xs text-stone-500">Payment is arranged with the apartment. No online payment is taken here.</p>
+							</div>
+						</aside>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer id="site-footer"></footer>
+		<script type="module" src="js/main.js"></script>
+	</body>
+</html>

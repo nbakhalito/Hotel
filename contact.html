@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Contact | L-Rina Apartment</title>
+		<meta name="description" content="Contact L-Rina Apartment in Eti-Osa, Lagos.">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body data-page="contact">
+		<header id="site-header"></header>
+		<main id="app">
+			<section class="relative flex h-[400px] items-end bg-cover bg-center" style="background-image:url('https://images.pexels.com/photos/14036249/pexels-photo-14036249.jpeg?auto=compress&cs=tinysrgb&w=1800')">
+				<div class="absolute inset-0 bg-black/45"></div>
+				<div class="container-lr relative z-10 pb-14 text-white"><p class="section-subtitle text-amber-400">We are here</p><h1 class="font-serif text-6xl font-bold">Contact Us</h1></div>
+			</section>
+			<section class="py-20"><div class="container-lr grid gap-10 lg:grid-cols-2"><div><p class="section-subtitle">Get in touch</p><h2 class="section-title">Let’s make your stay easy.</h2><div id="contact-details" class="mt-8 space-y-5 text-stone-600"></div></div><form id="contact-form" class="card-luxury p-7"><h3 class="font-serif text-3xl font-bold">Send a message</h3><div class="mt-6 space-y-4"><label class="sr-only" for="contact-name">Your name</label><input id="contact-name" name="name" required placeholder="Your name" class="input-luxury"><label class="sr-only" for="contact-email">Email address</label><input id="contact-email" name="email" type="email" required placeholder="Email address" class="input-luxury"><label class="sr-only" for="contact-message">Message</label><textarea id="contact-message" name="message" required rows="6" placeholder="How can we help?" class="input-luxury"></textarea><button class="btn-primary" type="submit">Send message</button></div></form></div></section>
+		</main>
+		<footer id="site-footer"></footer>
+		<script type="module" src="js/main.js"></script>
+	</body>
+</html>

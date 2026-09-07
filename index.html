@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L-Rina Apartment | Luxury Apartment in Lagos</title>
+    <meta name="description" content="Comfort, privacy, and modern luxury at L-Rina Apartment in Eti-Osa, Lagos.">
+    <meta property="og:title" content="L-Rina Apartment | Luxury Apartment in Lagos"><meta property="og:type" content="website">
+    <script src="https://cdn.tailwindcss.com"></script><link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body data-page="home">
+    <header id="site-header"></header>
+    <main id="app">
+      <section class="relative flex min-h-[680px] items-center overflow-hidden">
+        <div id="hero-bg" class="absolute inset-0 bg-cover bg-center transition-all duration-700"></div>
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="container-lr relative z-10 pt-24 text-white">
+          <p class="section-subtitle text-amber-400">L-Rina Apartment</p>
+          <h1 id="hero-headline" class="hero-text-shadow max-w-3xl font-serif text-5xl font-bold leading-tight md:text-7xl">Your private escape in the heart of Lagos</h1>
+          <p id="hero-subtext" class="hero-text-shadow mt-6 max-w-xl text-lg text-white/90 md:text-xl">Thoughtfully designed short-stay apartments for comfort, privacy, and effortless living.</p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="booking.html" class="btn-primary">Book Your Stay</a>
+            <a href="rooms.html" class="btn-outline">Explore Rooms</a>
+          </div>
+          <form id="availability-form" class="mt-12 grid max-w-4xl grid-cols-1 gap-3 rounded-2xl bg-white p-4 text-stone-800 shadow-2xl sm:grid-cols-4">
+            <label class="text-sm font-medium">Check-in<input name="checkin" type="date" required class="input-luxury mt-1"></label>
+            <label class="text-sm font-medium">Check-out<input name="checkout" type="date" required class="input-luxury mt-1"></label>
+            <label class="text-sm font-medium">Guests<select name="guests" class="input-luxury mt-1"><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
+            <button class="btn-primary self-end justify-center" type="submit">Check Availability</button>
+          </form>
+        </div>
+      </section>
+      <section class="py-24">
+        <div class="container-lr">
+          <div class="max-w-2xl"><p class="section-subtitle">Stay beautifully</p><h2 class="section-title">A softer, more private way to experience Lagos.</h2><p class="mt-6 leading-relaxed text-stone-600">L-Rina Apartment brings together thoughtful design, calm spaces, and warm Nigerian hospitality in Eti-Osa.</p></div>
+          <div id="home-rooms" class="mt-12 grid gap-6 md:grid-cols-3"></div>
+        </div>
+      </section>
+      <section class="bg-stone-100 py-24"><div class="container-lr"><div class="text-center"><p class="section-subtitle">Everything considered</p><h2 class="section-title">Made for easy stays</h2></div><div id="home-amenities" class="mt-12 grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6"></div></div></section>
+      <section class="py-24"><div class="container-lr"><div class="flex flex-col justify-between gap-6 md:flex-row md:items-end"><div><p class="section-subtitle">A glimpse inside</p><h2 class="section-title">Life at L-Rina</h2></div><a href="gallery.html" class="btn-dark">View gallery</a></div><div id="home-gallery" class="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3"></div></div></section>
+      <section class="bg-stone-900 py-24 text-white"><div class="container-lr"><div class="text-center"><p class="section-subtitle text-amber-400">Guest notes</p><h2 class="font-serif text-5xl font-bold">Kind words from our guests</h2></div><div id="home-reviews" class="mt-12 grid gap-6 md:grid-cols-2"></div></div></section>
+    </main>
+    <footer id="site-footer"></footer>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Rooms | L-Rina Apartment</title>
+		<meta name="description" content="Explore rooms and apartments at L-Rina Apartment in Lagos.">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body data-page="rooms">
+		<header id="site-header"></header>
+		<main id="app">
+			<section class="relative flex h-[420px] items-end bg-cover bg-center" style="background-image:url('https://images.pexels.com/photos/8135496/pexels-photo-8135496.jpeg?auto=compress&cs=tinysrgb&w=1800')">
+				<div class="absolute inset-0 bg-black/45"></div>
+				<div class="container-lr relative z-10 pb-16 text-white">
+					<p class="section-subtitle text-amber-400">Find your room</p>
+					<h1 class="font-serif text-6xl font-bold">Rooms &amp; Apartments</h1>
+				</div>
+			</section>
+			<section class="py-20">
+				<div class="container-lr">
+					<div class="mb-10 flex flex-col justify-between gap-4 md:flex-row md:items-end">
+						<div>
+							<p class="section-subtitle">Stay your way</p>
+							<h2 class="section-title">Choose your space</h2>
+						</div>
+						<form id="room-filter" class="flex flex-wrap gap-3">
+							<label class="sr-only" for="room-guests">Guests</label>
+							<select id="room-guests" name="guests" class="input-luxury w-auto">
+								<option value="">Any guests</option>
+								<option value="1">1+ guests</option>
+								<option value="2">2+ guests</option>
+								<option value="3">3+ guests</option>
+								<option value="4">4+ guests</option>
+							</select>
+							<label class="sr-only" for="room-type">Room type</label>
+							<select id="room-type" name="type" class="input-luxury w-auto">
+								<option value="">All types</option>
+							</select>
+							<button class="btn-dark" type="submit">Filter</button>
+						</form>
+					</div>
+					<div id="room-list" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3"></div>
+					<p id="room-empty" class="hidden rounded-xl bg-white p-10 text-center text-stone-600">No rooms match those preferences.</p>
+				</div>
+			</section>
+		</main>
+		<footer id="site-footer"></footer>
+		<script type="module" src="js/main.js"></script>
+	</body>
+</html>

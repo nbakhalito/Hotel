@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Gallery | L-Rina Apartment</title>
+		<meta name="description" content="See the spaces and details at L-Rina Apartment.">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body data-page="gallery">
+		<header id="site-header"></header>
+		<main id="app">
+			<section class="relative flex h-[400px] items-end bg-cover bg-center" style="background-image:url('https://images.pexels.com/photos/6920439/pexels-photo-6920439.jpeg?auto=compress&cs=tinysrgb&w=1800')">
+				<div class="absolute inset-0 bg-black/45"></div>
+				<div class="container-lr relative z-10 pb-14 text-white"><p class="section-subtitle text-amber-400">See the difference</p><h1 class="font-serif text-6xl font-bold">Gallery</h1></div>
+			</section>
+			<section class="py-20"><div class="container-lr"><div id="gallery-filters" class="flex flex-wrap gap-3"></div><div id="gallery-grid" class="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3"></div></div></section>
+		</main>
+		<footer id="site-footer"></footer>
+		<script type="module" src="js/main.js"></script>
+	</body>
+</html>

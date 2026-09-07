@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Food &amp; Drinks | L-Rina Apartment</title>
+		<meta name="description" content="Order food and drinks for your stay at L-Rina Apartment.">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body data-page="order">
+		<header id="site-header"></header>
+		<main id="app">
+			<section class="relative flex h-[400px] items-end bg-cover bg-center" style="background-image:url('https://images.pexels.com/photos/34278808/pexels-photo-34278808.jpeg?auto=compress&cs=tinysrgb&w=1800')">
+				<div class="absolute inset-0 bg-black/45"></div>
+				<div class="container-lr relative z-10 pb-14 text-white">
+					<p class="section-subtitle text-amber-400">In-room dining</p>
+					<h1 class="font-serif text-6xl font-bold">Food &amp; Drinks</h1>
+				</div>
+			</section>
+			<section class="py-20">
+				<div class="container-lr">
+					<div class="flex flex-col justify-between gap-5 md:flex-row md:items-end">
+						<div>
+							<p class="section-subtitle">Delivered to your room</p>
+							<h2 class="section-title">A little something delicious</h2>
+						</div>
+						<button id="cart-button" class="btn-dark" type="button">Cart (0) · ₦0</button>
+					</div>
+					<div id="menu-categories" class="mt-8 flex flex-wrap gap-3"></div>
+					<div id="menu-list" class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+				</div>
+			</section>
+		</main>
+		<footer id="site-footer"></footer>
+		<script type="module" src="js/main.js"></script>
+	</body>
+</html>
