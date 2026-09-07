@@ -5,12 +5,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>My Booking | L-Rina Apartment</title>
 		<meta name="description" content="Look up your L-Rina Apartment booking.">
-		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body data-page="my-booking">
 		<header id="site-header"></header>
-		<main id="app"></main>
+		<main id="app">
+			<section class="relative flex h-[360px] items-end bg-cover bg-center" style="background-image:url('https://images.pexels.com/photos/8134775/pexels-photo-8134775.jpeg?auto=compress&cs=tinysrgb&w=1800')">
+				<div class="absolute inset-0 bg-black/45"></div>
+				<div class="container-lr relative z-10 pb-14 text-white"><p class="section-subtitle text-amber-400">L-Rina Apartment</p><h1 class="font-serif text-6xl font-bold">My Booking</h1></div>
+			</section>
+			<section class="py-20"><div class="container-lr max-w-3xl"><form id="lookup-form" class="flex flex-col gap-3 sm:flex-row"><label class="sr-only" for="reference">Reference number</label><input id="reference" name="reference" required placeholder="Enter your reference number" class="input-luxury"><button class="btn-primary justify-center" type="submit">Look up</button></form><div id="lookup-result" class="mt-8"></div></div></section>
+		</main>
 		<footer id="site-footer"></footer>
 		<script type="module" src="js/main.js"></script>
 	</body>
